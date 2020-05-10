@@ -63,3 +63,15 @@ class Square extends React.Component {
   }
 }
 ```
+
+## 関数コンポーネント
+render メソッドだけを有して自分の state を持たないコンポーネントを、よりシンプルに書くための方法。
+```JS
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
+```
